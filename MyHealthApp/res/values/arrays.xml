@@ -1,0 +1,41 @@
+<resources>
+
+    <string-array name="sensitivity_preference">
+        <item>@string/high</item>
+        <item>@string/medium</item>
+        <item>@string/low</item>
+    </string-array>
+    <string-array name="sensitivity_preference_values">
+        <item>4.4444</item> <!-- 10 * 1.5^(-2) -->
+        <item>10</item>
+        <item>22.5</item> <!-- 10 * 1.5^2 -->
+
+    </string-array>
+    <string-array name="units_preference">
+        <item>@string/units_metric</item>
+        <item>@string/units_imperial</item>
+    </string-array>
+    <string-array name="units_preference_values">
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+    <string-array name="exercise_type_preference">
+        <item>@string/exercise_type_running</item>
+        <item>@string/exercise_type_walking</item>
+    </string-array>
+    <string-array name="exercise_type_preference_values">
+        <item>running</item>
+        <item>walking</item>
+    </string-array>
+    <string-array name="speaking_interval_preference">
+        <item>@string/interval_2_minutes</item>
+        <item>@string/interval_5_minutes</item>
+        <item>@string/interval_10_minutes</item>
+    </string-array>
+    <string-array name="speaking_interval_preference_values">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+</resources>

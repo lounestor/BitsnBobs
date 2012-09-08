@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical"
+    android:padding="25dip" >
+    
+    <TextView
+        android:id="@+id/DateStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#658f92"
+        android:paddingLeft="15px"
+        android:textColor="#f1f2f2"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:typeface="sans" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/step_labeltextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="50dip"
+            android:paddingTop="15dip"
+            android:text="Steps"
+            android:textColor="#10bcc9"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/StepsStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2e2e2e" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/distance_labeltextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dip"
+            android:text="Distance"
+            android:textColor="#10bcc9"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/DistanceStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2e2e2e" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/pace_labeltextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="55dip"
+            android:text="Pace"
+            android:textColor="#10bcc9"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/PaceStats"
+            android:layout_width="320dip"
+            android:layout_height="wrap_content"
+            android:textColor="#2e2e2e" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/speed_labeltextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="45dip"
+            android:text="Speed"
+            android:textColor="#10bcc9"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/SpeedStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2e2e2e" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/calories_labeltextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dip"
+            android:text="Calories"
+            android:textColor="#10bcc9"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/CaloriesStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2e2e2e" />
+    </LinearLayout>   
+
+</LinearLayout>

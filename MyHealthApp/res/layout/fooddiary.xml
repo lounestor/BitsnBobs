@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f9fe"
+    android:orientation="vertical" >
+     <include layout="@layout/header_layout" />
+	<TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        
+            <TextView	        	
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dip"
+                android:textStyle="bold"
+                android:text="MY FOOD DIARY" 
+                android:layout_centerHorizontal="true"           
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />	    		
+	    	
+    	
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="15dip" >
+            <TextView	        	
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:text="@string/fruitLabel"               
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+	    	<TextView
+	        	android:id="@+id/selection"
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"      
+                android:layout_marginLeft="15dip"          
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+	    	<TextView
+	        	android:id="@+id/selection"
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/ 7"
+                android:layout_marginRight="15dip"               
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+		
+	    	<Spinner
+	        	android:id="@+id/spinner"
+	        	android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@android:drawable/btn_dropdown"
+               
+                android:textAppearance="?android:attr/textAppearanceLarge" 
+	        	/>
+	    	<ImageButton
+	    	    android:id="@+id/info1"
+	    	    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info1" />
+    	</TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="15dip" >
+	    	<TextView	        	
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:text="@string/vegLabel"               
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+	    	<TextView
+	        	android:id="@+id/selection2"
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_marginLeft="15dip" 
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+	    	<TextView
+	        	
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/ 2+"
+                android:layout_marginRight="15dip"               
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+		
+	    	<Spinner
+	        	android:id="@+id/spinner2"
+	        	android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@android:drawable/btn_dropdown"
+                
+                android:textAppearance="?android:attr/textAppearanceLarge" 
+	        	/>
+	    	<ImageButton
+	    	    android:id="@+id/info2"
+	    	    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info2" />
+    	</TableRow>
+    	<TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="15dip" >
+	    	<TextView	        	
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                
+                android:text="@string/dairyLabel"               
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+	    	<TextView
+	        	android:id="@+id/selection3"
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+               	android:layout_marginLeft="15dip" 
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+	    	<TextView
+	        	
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/ 4"
+                android:layout_marginRight="15dip" 
+                             
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+		
+	    	<Spinner
+	        	android:id="@+id/spinner3"
+	        	android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@android:drawable/btn_dropdown"
+               
+                android:textAppearance="?android:attr/textAppearanceLarge" 
+	        	/>
+	    	<ImageButton
+	    	    android:id="@+id/info3"
+	    	    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info3" />
+    	</TableRow>
+    	<TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="15dip" >
+	    	<TextView	        	
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:text="@string/meatLabel"               
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+	    	<TextView
+	        	android:id="@+id/selection4"
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_marginLeft="15dip" 
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+	    	<TextView
+	        
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/ 2"
+                android:layout_marginRight="15dip"
+                            
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+		
+	    	<Spinner
+	        	android:id="@+id/spinner4"
+	        	android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@android:drawable/btn_dropdown"
+                
+                android:textAppearance="?android:attr/textAppearanceLarge" 
+	        	/>
+	    	<ImageButton
+	    	    android:id="@+id/info4"
+	    	    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info4" />
+    	</TableRow>
+    	<TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="15dip" >
+	    	<TextView	        	
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:text="@string/grainLabel"               
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+	    	<TextView
+	        	android:id="@+id/selection5"
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_marginLeft="15dip" 
+                
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+	    	<TextView	        	
+	        	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                
+                android:text="/ 1+"               
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#10bcc9"  />
+		
+	    	<Spinner
+	        	android:id="@+id/spinner5"
+	        	android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@android:drawable/btn_dropdown"
+               
+                android:textAppearance="?android:attr/textAppearanceLarge" 
+	        	/>
+	    	<ImageButton
+	    	    android:id="@+id/info5"
+	    	    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info5" />
+    	</TableRow>
+    	</TableLayout>
+
+	<RelativeLayout 
+		 android:layout_width="wrap_content" 
+ 		android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true">
+    
+        <Button
+            android:id="@+id/button_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="View Chart" />
+
+        <Button
+            android:id="@+id/button_savedata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="@+id/button_chart"
+            android:text="Save Data" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f9fe"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_layout" />
+
+    <LinearLayout
+        android:id="@+id/row_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10px" >
+
+        <LinearLayout
+            android:id="@+id/box_steps"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10px" >
+
+            <TextView
+                android:id="@+id/step_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/display_background"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:paddingTop="5px"
+                android:text=""
+                android:textColor="#343434"
+                android:textSize="45dip" />
+
+            <TextView
+                android:id="@+id/step_units"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/display_background"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5px"
+                android:text="@string/steps"
+                android:textColor="#10bcc9"
+                android:textSize="10dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/box_distance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/distance_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/display_background"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:paddingTop="5px"
+                android:text=""
+                android:textColor="#343434"
+                android:textSize="45dip" />
+
+            <TextView
+                android:id="@+id/distance_units"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/display_background"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5px"
+                android:text="@string/kilometers"
+                android:textColor="#10bcc9"
+                android:textSize="10dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10px" >
+
+        <LinearLayout
+            android:id="@+id/box_pace"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="10px" >
+
+            <TextView
+                android:id="@+id/pace_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/display_background"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:paddingTop="@dimen/padding"
+                android:text=""
+                android:textColor="#343434"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/pace_units"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/display_background"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5px"
+                android:text="@string/steps_per_minute"
+                android:textColor="#10bcc9"
+                android:textSize="10dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/box_speed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="10px" >
+
+            <TextView
+                android:id="@+id/speed_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/display_background"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:paddingTop="5px"
+                android:text=""
+                android:textColor="#343434"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/speed_units"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/display_background"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5px"
+                android:text="@string/kilometers_per_hour"
+                android:textColor="#10bcc9"
+                android:textSize="10dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/box_calories"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/calories_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/display_background"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:paddingTop="5px"
+                android:text=""
+                android:textColor="#343434"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/calories_units"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/display_background"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5px"
+                android:text="@string/calories_burned"
+                android:textColor="#10bcc9"
+                android:textSize="10dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/box_calories"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/calories_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/display_background"
+            android:gravity="center_horizontal"
+            android:paddingLeft="5px"
+            android:paddingRight="5px"
+            android:paddingTop="5px"
+            android:text=""
+            android:textColor="#343434"
+            android:textSize="30dip" />
+
+        <TextView
+            android:id="@+id/calories_units"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/display_background"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5px"
+            android:textColor="#000"
+            android:textSize="10dip" />
+    </LinearLayout>
+
+    <!-- Button "-", for decrementing desired pace/speed -->
+
+    <Button
+        android:id="@+id/button_save_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Save Stats" />
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f9fe"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_layout" />
+
+    <ViewFlipper
+        android:id="@+id/ViewFlipper01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right" >
+
+        <LinearLayout
+            android:id="@+id/StatsViewScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ListView
+                android:id="@+id/StatsListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="#b5b5b5"
+                android:listSelector="@drawable/list_selector" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/AddEditScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps Stats" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/StepsStats"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance Stats" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/DistanceStats"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pace" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/PaceStats"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/SpeedStats"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories Stats" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/CaloriesStats"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/DateStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/CancelButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel" >
+                </Button>
+
+                <Button
+                    android:id="@+id/AddEditButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Add" >
+                </Button>
+
+                <Button
+                    android:id="@+id/AddDeleteButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Delete" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ViewFlipper>
+
+</LinearLayout>

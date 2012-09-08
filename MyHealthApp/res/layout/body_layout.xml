@@ -1,0 +1,55 @@
+<com.mad.lou.MyHealthLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+
+    <!-- events Button -->
+
+    <Button
+        android:id="@+id/btn_stats"
+        style="@style/MyHealthButton"
+        android:drawableTop="@drawable/btn_stats"
+        android:text="@string/stats" />
+
+    <!-- bmi Button -->
+
+    <Button
+        android:id="@+id/btn_bmi"
+        style="@style/MyHealthButton"
+        android:drawableTop="@drawable/btn_bmi"
+        android:text="@string/bmi" />
+
+    <!-- maps Button -->
+
+    <Button
+        android:id="@+id/btn_maps"
+        style="@style/MyHealthButton"
+        android:drawableTop="@drawable/btn_maps"
+        android:text="@string/maps" />
+
+    <!-- music Button -->
+
+    <Button
+        android:id="@+id/btn_music"
+        style="@style/MyHealthButton"
+        android:drawableTop="@drawable/btn_music"
+        android:text="@string/music" />
+
+    <!-- pedometer Button -->
+
+    <Button
+        android:id="@+id/btn_pedometer"
+        style="@style/MyHealthButton"
+        android:drawableTop="@drawable/btn_pedometer"
+        android:text="@string/pedometer" />
+
+    <!-- recipe Button -->
+
+    <Button
+        android:id="@+id/btn_recipes"
+        style="@style/MyHealthButton"
+        android:drawableTop="@drawable/btn_recipes"
+        android:text="@string/recipes" />
+
+</com.mad.lou.MyHealthLayout>

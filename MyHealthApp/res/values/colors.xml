@@ -1,0 +1,10 @@
+<resources>
+
+    <color name="screen_background">#f8f9fe</color>
+    <color name="display_background">#f8f9fe</color>
+    <color name="blue">#118d9c</color>
+    <color name="white">#f8f9fe</color>
+    <color name="darkgrey">#242525</color>
+    
+
+</resources>
