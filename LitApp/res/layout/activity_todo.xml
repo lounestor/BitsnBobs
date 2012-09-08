@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:inAnimation="@android:anim/slide_in_left" 
+    android:outAnimation="@android:anim/slide_out_right"
+    android:background="#FFFFFF"
+	android:layout_height="fill_parent">
+
+<ViewFlipper android:id="@+id/ViewFlipper01"
+	android:layout_height="wrap_content" android:layout_width="fill_parent"
+	android:inAnimation="@android:anim/slide_in_left" 
+    android:outAnimation="@android:anim/slide_out_right">
+	<LinearLayout android:id="@+id/ListViewScreen"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		<ListView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/todoListView"></ListView>
+	</LinearLayout>
+	<LinearLayout 
+	    android:id="@+id/AddEditScreen"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" 
+		android:layout_width="fill_parent">
+		<TextView android:id="@+id/TextView01" 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="Reminder">		    
+		</TextView>
+		
+		<EditText
+		     android:layout_height="wrap_content" 
+		     android:id="@+id/todoItem"
+			android:layout_width="fill_parent">		    
+		</EditText>
+		
+		<TextView 
+		    android:id="@+id/TextView02" 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="To do">		    
+		</TextView>
+		
+		<EditText
+		    android:layout_height="wrap_content"
+			android:layout_width="fill_parent" 
+			android:id="@+id/todoTime">		    
+		</EditText>
+		
+		<LinearLayout 
+		    android:id="@+id/LinearLayout03"
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:layout_alignParentBottom="true">
+			<Button android:layout_height="wrap_content" 
+			    android:id="@+id/DeleteButton"
+				android:text="Delete" 
+				android:layout_weight="1"
+				android:layout_width="fill_parent">
+			    
+			</Button>
+			
+			<Button android:layout_height="wrap_content" android:id="@+id/CancelButton"
+				android:text="Cancel" android:layout_weight="1"
+				android:layout_width="fill_parent"></Button>
+			<Button android:layout_height="wrap_content" android:id="@+id/AddEditButton"
+				android:text="Add" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+		</LinearLayout>
+	</LinearLayout>
+</ViewFlipper>
+
+
+
+</LinearLayout>

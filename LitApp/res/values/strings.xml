@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, LitAppActivity!</string>
+    <string name="app_name">LitApp</string>
+    <string name="ca"> CA Calculator</string>
+    <string name="profile">Profile</string>
+    <string name="maps">Maps</string>
+    <string name="moodle">Moodle</string>
+    <string name="notes">Todo List</string>
+    <string name="timetable">Timetable</string>
+    <string name="gps_disabled">GPS disabled</string>
+    <string name="gps_enabled">GPS enabled</string>
+    
+    <string name="time">"Time: "</string>
+    <string name="room">"Room: "</string>
+    <string name="hour">"Hour: "</string>
+    <string name="classTime">"Class Time: "</string>
+    <string name="className">"Class: "</string>
+    <string name="tTime">"Time: "</string>
+    <string name="tName">"Class: "</string>
+    <string name="tType">"Type: "</string>
+    <string name="classroom">"Room: "</string>
+    <string name="typeTmb">Type</string>
+    <string name="classroomTmb"></string>
+    <string name="typeTimetable">"Type: "</string>
+    <string name="roomTimetable">"Room: "</string>
+    
+    <string-array name="campus">
+        <item name="moylish_campus">Moylish</item>
+        <item name="clare_street_campus">Clare Street</item>        
+    </string-array>
+
+</resources>

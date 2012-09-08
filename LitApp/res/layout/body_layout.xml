@@ -1,0 +1,55 @@
+<com.mad.lit.MyLitLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+
+    <!-- events Button -->
+
+    <Button
+        android:id="@+id/btn_profile"
+        style="@style/MyLitButton"
+        android:drawableTop="@drawable/btn_profile"
+        android:text="@string/profile" />
+
+    <!-- ca Button -->
+
+    <Button
+        android:id="@+id/btn_ca"
+        style="@style/MyLitButton"
+        android:drawableTop="@drawable/btn_ca"
+        android:text="@string/ca" />
+
+    <!-- maps Button -->
+
+    <Button
+        android:id="@+id/btn_maps"
+        style="@style/MyLitButton"
+        android:drawableTop="@drawable/btn_maps"
+        android:text="@string/maps" />
+
+    <!-- notes Button -->
+
+    <Button
+        android:id="@+id/btn_notes"
+        style="@style/MyLitButton"
+        android:drawableTop="@drawable/btn_notes"
+        android:text="@string/notes" />
+
+    <!-- timetable Button -->
+
+    <Button
+        android:id="@+id/btn_timetable"
+        style="@style/MyLitButton"
+        android:drawableTop="@drawable/btn_timetable"
+        android:text="@string/timetable" />
+
+    <!--  Button -->
+
+    <Button
+        android:id="@+id/btn_moodle"
+        style="@style/MyLitButton"
+        android:drawableTop="@drawable/btn_moodle"
+        android:text="@string/moodle" />
+
+</com.mad.lit.MyLitLayout>

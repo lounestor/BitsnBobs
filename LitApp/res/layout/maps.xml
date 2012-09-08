@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapCampusViewFlipper"
+	android:layout_height="match_parent" 
+	android:layout_width="match_parent"
+	android:inAnimation="@android:anim/slide_in_left" 
+    android:outAnimation="@android:anim/slide_out_right"
+    android:background="#FFFFFF">
+    
+    <LinearLayout
+	    android:id="@+id/CampusesLayout"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+    
+    	<include layout="@layout/mapheader"/>
+    
+	    <ListView 
+	        android:id="@+id/campusList"
+	      	android:layout_height="0dp"
+	      	android:layout_width="match_parent"
+	      	android:layout_weight="1"
+	      	android:cacheColorHint="@android:color/transparent"
+	      	android:drawSelectorOnTop="false">  
+	    </ListView>
+  
+	</LinearLayout>
+	
+    
+	<LinearLayout
+	    android:id="@+id/MapLayout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical" >
+
+    	<com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+      	android:apiKey="0UQsMic4lqBwMrMIBfhuTdQaPxPxmjE7ktSfptA"
+        android:clickable="true"
+        android:enabled="true" />    	
+    	  <!-- public key: android:apiKey="0UQsMic4lqBwMrMIBfhuTdQaPxPxmjE7ktSfptA"
+    	  	degbug key: android:apiKey= "0UQsMic4lqByzpsgjXeCffolE141RvIod10MNMw"-->
+	
+	</LinearLayout>
+
+	
+</ViewFlipper>
