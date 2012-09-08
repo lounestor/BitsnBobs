@@ -1,0 +1,58 @@
+SMAP
+index_jsp.java
+JSP
+*S JSP
+*F
++ 0 index.jsp
+index.jsp
++ 1 login.jsp
+includes/login.jsp
++ 2 register.jsp
+includes/register.jsp
++ 3 header.jsp
+includes/header.jsp
++ 4 editdetails.jsp
+includes/editdetails.jsp
++ 5 gallerysection.jsp
+includes/gallerysection.jsp
++ 6 news.jsp
+includes/news.jsp
++ 7 footer.jsp
+includes/footer.jsp
+*L
+5,39:62
+5#1,38:101
+43#0,4:138
+5#2,30:142
+46#0,4:171
+5#3,29:175
+33,12:204
+47,2:219
+48,17:221
+65:238,3
+66,6:241
+72:247,3
+73,6:250
+49#0,4:255
+5#4,24:259
+52#0,4:282
+5#5,26:286
+55#0,14:311
+5#6,28:325
+32,2:353
+34:355,3
+35,4:358
+39:362,3
+40,3:365
+43:368,5
+44:373
+45,8:375
+52:383
+53:384,3
+54,3:387
+57:390,3
+58,2:393
+68#0,27:394
+5#7,12:421
+94#0,9:432
+*E

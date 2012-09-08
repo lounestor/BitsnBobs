@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Home - Home Page | Tut-Tutoring</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/colorbox.css" />
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/cufon-yui.js"></script>
+        <script type="text/javascript" src="js/Humanst521_BT_400.font.js"></script>
+        <script type="text/javascript" src="js/Humanst521_Lt_BT_400.font.js"></script>
+        <script type="text/javascript" src="js/roundabout.js"></script>
+        <script type="text/javascript" src="js/roundabout_shapes.js"></script>
+        <script type="text/javascript" src="js/gallery_init.js"></script>
+        <script type="text/javascript" src="js/cufon-replace.js"></script>
+        <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                $(".inline").colorbox({
+                    inline: true,
+                    width: "50%"
+                });
+                $(".callbacks").colorbox({
+                    onOpen: function () {
+                        alert('onOpen: colorbox is about to open');
+                    },
+                    onLoad: function () {
+                        alert('onLoad: colorbox has started to load the targeted content');
+                    },
+                    onComplete: function () {
+                        alert('onComplete: colorbox has displayed the loaded content');
+                    },
+                    onCleanup: function () {
+                        alert('onCleanup: colorbox has begun the close process');
+                    },
+                    onClosed: function () {
+                        alert('onClosed: colorbox has completely closed');
+                    }
+                });
+
+                //Example of preserving a JavaScript event for inline calls.
+                $("#click").click(function () {
+                    $('#click').css({
+                        "background-color": "#f00",
+                        "color": "#fff",
+                        "cursor": "inherit"
+                    }).text("Open this window again and this message will still be here.");
+                    return false;
+                });
+            });
+        </script>
+        <!--[if lt IE 7]>
+            <link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
+        <![endif]-->
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="js/html5.js"></script>
+            <script type="text/javascript" src="js/IE9.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <!-- header -->
+        <header>
+            <div class="container">
+                <h1>
+                    <a href="index.html">Tut-Tutoring</a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="current">Home</a>
+                        </li>
+                        <li>
+                            <a href="lesson.html">Lessons</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a class='inline' href="#inline_content">Login</a>
+                        </li>
+                        <li>
+                            <a class='inline' href="#register">Register</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- #gallery -->
+        <section id="gallery">
+            <div class="container">
+                <ul id="myRoundabout">
+                    <li>
+                        <img src="images/slide3.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/slide2.png" alt="">
+                    </li>                    
+                    <li>
+                        <img src="images/slide1.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/slide4.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- /#gallery -->
+        <div class="main-box">
+            <div class="container">
+                <div class="inside">
+                    <div class="wrapper">
+                        <!-- aside -->
+                        <aside>
+                            <h2>Top
+                                <span>Lessons</span>
+                            </h2>
+                            <!-- .news -->
+                            <ul class="news">
+                                <li>
+                                    <figure>
+                                        <strong>22</strong>likes</figure>
+                                    <h3>
+                                        <a href="#">Hot Cross Buns</a>
+                                    </h3>Domnis iste natus error sit voluptam accusa doloremque
+                                    <a href="#">...</a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <strong>9</strong>likes</figure>
+                                    <h3>
+                                        <a href="#">Scales</a>
+                                    </h3>Eaqueipsa quae abillo inventoretis et quasi architecto beatae
+                                    <a href="#">...</a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <strong>31</strong>likes</figure>
+                                    <h3>
+                                        <a href="#">Oro se do bheatha bhaile</a>
+                                    </h3>Architecto beatae vitae dicta sunt explicabo
+                                    <a href="#">...</a>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <strong>25</strong>likes</figure>
+                                    <h3>
+                                        <a href="#">Nemo enim ipsam</a>
+                                    </h3>Voluptatem quia voluptas sit asper natur aut odit aut fugit
+                                    <a href="#">...</a>
+                                </li>
+                            </ul>
+                            <!-- /.news -->
+                        </aside>
+                        <!-- content -->
+                        <section id="content">
+                            <article>
+                                <h2>Welcome to
+                                    <span>Tut-Tutoring</span>
+                                </h2>
+                                <p>Tut-tutoring is a platform developed to aid the learning of the tin-whistle.</p>
+                                <figure>
+                                    <a href="#"><img src="images/banner1.png" alt=""></a>
+                                </figure>
+                                <p>This website template has several features which will encourage the learning
+                                    process</p>This website video ,</article>
+                        </section>
+                        <!-- This contains the hidden content for inline calls -->
+                        <div style='display:none'>
+                            <div class="img_modal" id='inline_content' style='padding:10px;'>
+                                <h2>Login</h2>
+                                <ul>
+                                    <li>
+                                        <input style="padding-bottom:5px" value="" id="user_login" name="user[login]"
+                                        placeholder="username" size="30" type="text" required>
+                                    </li>
+                                    <li>
+                                        <input value="" id="user_login" name="user[login]" placeholder="password"
+                                        size="30" type="text" required>
+                                    </li>
+                                    <li class="button">
+                                        <input type="hidden" name="option" value="login" />
+                                        <input class="button_save" name="commit" value="Sign In" type="submit">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style='display:none'>
+                            <div id='register' class="img_modal" style='padding:10px;'>
+                                <h2>Register</h2>
+                                <ul>
+                                    <li>
+                                        <input value="" id="user_login" name="user[username]" placeholder="username"
+                                        size="30" type="text" required>
+                                    </li>
+                                    <li>
+                                        <input value="" id="user_password" name="user[password]" placeholder="password"
+                                        size="30" type="text" required>
+                                    </li>
+                                    <li>
+                                        <input value="" id="user_email" name="user[email]" placeholder="email"
+                                        size="30" type="text" required>
+                                    </li>
+                                    <li class="btn">
+                                        <input type="hidden" name="option" value="register" />
+                                        <input class="button_save" name="commit" value="Register" type="submit">
+                                    </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="fleft">Copyright - Tut-Tutoring</div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            Cufon.now();
+        </script>
+    </body>
+
+</html>

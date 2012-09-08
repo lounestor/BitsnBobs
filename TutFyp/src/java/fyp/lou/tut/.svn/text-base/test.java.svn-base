@@ -1,0 +1,128 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package fyp.lou.tut;
+
+import entity.Comment;
+import entity.Lesson;
+import entity.Lesson.Category;
+import entity.User;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+/**
+ *
+ * @author louise
+ */
+public class test {
+    
+    public static void main(String []args) throws SQLException{
+       /* User new_User = new User();
+         new_User.setUsername("bbbb");
+         new_User.setEmail("testing2@email.com");
+         new_User.setPassword("testing2");
+         //User.Acctype acc = User.Acctype.student;
+         new_User.setAcctype(User.Acctype.student);
+         
+         //new_User.setAcctype("student");
+          
+              
+                 
+        if (new_User.registerUser()) {
+            System.out.println("user has been created");}
+        else { System.out.println("error on inserting user");
+    
+        
+        }
+        System.out.println("before lesson view");
+        Lesson lesson = new Lesson();
+        Collection collection = new ArrayList<Lesson>();
+        System.out.println("collection has been created");
+        Lesson.Category acc2 = Lesson.Category.beginner;    
+        collection = Lesson.getByCategory(acc2);
+        
+        System.out.println("lesson is "+ collection);
+        Iterator it = collection.iterator();
+        while(it.hasNext()){
+            System.out.println("in iterator");
+            lesson = (Lesson)it.next();
+            lesson.print();
+         }
+    
+    
+        System.out.println("view all lesson based on id of lesson");
+        Lesson lesson_byid = new Lesson();       
+        lesson_byid.getByLessonID(1);
+        System.out.println("creator id is "+ lesson_byid.getUserID());
+        lesson_byid.print();
+        
+        
+        System.out.println("start liking a lesson");
+        Lesson.like(1, 1);
+        Lesson.like(1, 1);
+        Lesson.like(1, 11);
+        Lesson.like(1, 33);
+        
+        
+        System.out.println("start dislike a lesson");
+        Lesson.dislike(1, 1);
+        Lesson.dislike(1, 1);
+        Lesson.dislike(1, 31);
+        
+        Lesson.like(1, 1);*/
+        
+      Comment comment = new Comment();
+      comment.setUploadID(1);
+      comment.setCommentorID(58);
+      comment.setText("hello this is my comment");
+      comment.setInReplyTo(0);
+      comment.insertThisComment();
+      
+      //update comment
+      comment.getCommentByID(1);
+      comment.setText("this is my new comment");
+      comment.updateThisComment();
+      
+      //delete (treated as deleted)
+      comment.getCommentByID(7);
+      comment.deleteThisComment();
+      
+      Comment commentreply = new Comment();
+      commentreply.setUploadID(1);
+      commentreply.setCommentorID(58);
+      commentreply.setText("hello this is my comment");
+      commentreply.setInReplyTo(commentreply.getCommentorID());
+      commentreply.insertThisComment();
+      
+      
+      
+      Collection collection = new ArrayList<Comment>();
+      System.out.println("collection has been created");            
+      collection = Comment.showOriginalComments(1);        
+      System.out.println("comment is "+ collection);
+      Iterator it = collection.iterator();
+      while(it.hasNext()){
+          System.out.println("in iterator");
+          commentreply = (Comment)it.next();
+          commentreply.print();
+         }
+        Comment cmr = new Comment();
+        
+        
+        System.out.println("collection has been created");            
+        collection = commentreply.getRepliesToThisComment();        
+        System.out.println("comment reply is "+ collection);
+        Iterator itr = collection.iterator();
+        while(itr.hasNext()){
+            System.out.println("in iterator");
+            cmr = (Comment)it.next();
+            cmr.print();
+         }
+    }
+}
+    
+

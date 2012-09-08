@@ -1,0 +1,46 @@
+<%-- 
+    Document   : news
+    Created on : Apr 18, 2012, 4:28:42 PM
+    Author     : louise
+--%>
+
+<%@page import="fyp.lou.tut.LessonServlet"%>
+<%@page import="java.util.Iterator"%>
+<%@page import="entity.Lesson"%>
+<%@page import="java.util.Collection"%>
+<%@page import="java.util.ArrayList"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+
+<%
+ LessonServlet.loadLessonbyLikes(request, response);
+     
+               
+//Integer.parseInt(session.getAttribute("type").toString());
+Collection collection = new ArrayList<Lesson>();
+collection = (Collection) session.getAttribute("MostLikedLesson");
+Iterator it = collection.iterator();
+
+while (it.hasNext()) {
+
+Lesson lessonList = new Lesson();
+lessonList = (Lesson) it.next();
+// session.getAttribute("prodid");
+
+                                                    
+                                      
+%>
+
+<ul class="news">
+    <li>
+        <figure>
+            <strong><%=lessonList.getLikeTotal() %> </strong>likes
+        </figure>
+        <h3>
+            <a href="#"><%=lessonList.getTitle() %></a>
+        </h3><%=lessonList.getDescription() %>
+        <a href="#">...</a>
+    </li> 
+    
+</ul>
+<%}%>
